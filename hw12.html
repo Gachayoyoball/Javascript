@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <script src="hw12.js"></script>
+    <title>HW</title>
+  </head>
+  <body>
+    <label for="who">Who are you?</label><br><br>
+    <input type="text" name="who" id="who" value="JavaScript">
+    <button id="ok-btn">OK</button>
+
+
+    <script>
+      let btn = document.querySelector('#ok-btn');
+      btn.onclick = greeting;
+      btn.addEventListener('click', Blah);
+      btn.addEventListener('click', () => {
+        let input = document.querySelector("#who");
+        console.log(input.value + 'Blah');
+      });
+    </script>
+  </body>
+</html>
